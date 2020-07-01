@@ -8,34 +8,64 @@
         <title> Everyday needs - flexbox </title>  
 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-         
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     </head>
 
     <body>
         <header>
-            <div id="logo">
+            <div class="logo">
 
-                <h1>everyday <br/>
-                needs</h1>
+                <div class="premiere-ligne-logo">
+                    <h1>everyday </h1>
+                </div>
+                <div class="deuxieme-ligne-logo">
+                    <h1>needs</h1>
+                </div>
+                
 
             </div>
 
-            <div id="menu">
-                <nav>
-                    <li> New</li>
-                    <li>Shop All</li>
-                    <li>Back in Stock</li>
-                    <li>Bathroom</li>
-                    <li>Kitchen & Table</li>
-                    <li>Housekeeping</li>
-                    <li>Living</li>
-                    <li>Outdoors</li>
-                    <li>Office & Paper</li>
-                    <li>Baby & Child</li>
-                    <li>Clothing</li>
-                    <li>Gift Voucher</li>
-                </nav>
+            <nav class="menu">
+                <div class="partie-menu">
+                    <li> <a href="#">New</a></li>
+                    <li><a href="#">Shop All</a></li>
+                    <li><a href="#">Back in Stock</a></li>
+                </div>
+                <div class="partie-menu">
+                    <li><a href="#">Bathroom</a></li>
+                    <li><a href="#"><span>Kitchen & Table</span></a></li>
+                    <li><a href="#">Housekeeping</a></li>
+                </div>
+                <div class="partie-menu">
+                    <li><a href="#">Living</a></li>
+                    <li><a href="#">Outdoors</a></li>
+                    <li><a href="#">Office & Paper</a></li>
+                </div>
+                <div class="partie-menu"> 
+                    <li><a href="#">Baby & Child</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Gift Voucher</a></li>
+                </div>                       
+             </nav>
+
+            <div class="search">
+                <input type="search" name="search" id="search" placeholder="Search"/>
+                <i class="fas fa-search"></i>
             </div>
+
+            <div class="marge-droite-header"></div>
+
+            <div class="panier">
+                <ul>
+                    <li><p>Cart (0)</p></li>
+                    <li><p>Login</p></li>
+                    <li><p>$ NZD</p></li>
+                </ul>
+
+            </div>
+            
           
 
         </header>
@@ -45,8 +75,13 @@
         <!--Index-->
 
             <div class="index">
-                <ul class="detail-index"> Kitchen & Table 
-                    <li><a href="#">All</a></li>
+
+                <div class="titre-section">
+                    <h2>Kitchen & Table </h2>
+                </div>
+
+                <ul class="detail-index"> 
+                    <li><a href="#"><span>All</span></a></li>
                     <li><a href="#">Glass</li>
                     <li><a href="#">Tea & Coffee</a></li>
                     <li><a href="#">Accessories</a></li>
@@ -80,27 +115,21 @@
 
                 <div id="premiere-ligne">
                     <div class="gauche-pl">
-                        <div class="big-pic">
-                            <img src="Images/theiere.jpg" alt="Theiere"/>
-                        </div>
+                        <img src="Images/theiere.jpg" alt="Theiere"/>
                     </div>
                     <div class="droite-pl">
-                        <div class="petites-img">
-                            <div class="small-pic">
-                                <img src="Images/pince.jpg" alt="Pince coquillage"/>
-                            </div>
-                            <div class="small-pic">
-                                <img src="Images/selpoivre.jpg" alt="Sel et poivre"/>
-                            </div>
-                            <div class="small-pic">
-                                <img src="Images/pressecitron.jpg" alt="Presse citron"/>
-                            </div>
-                            <div class="small-pic">
-                                <img src="Images/affiche.jpg" alt="Affiche"/>
-                            </div>
+                        <div class="small-pic">
+                            <img src="Images/pince.jpg" alt="Pince coquillage"/>
                         </div>
-                        
-                      
+                        <div class="small-pic">
+                            <img src="Images/selpoivre.jpg" alt="Sel et poivre"/>
+                        </div>
+                        <div class="small-pic">
+                            <img src="Images/pressecitron.jpg" alt="Presse citron"/>
+                        </div>
+                        <div class="small-pic">
+                            <img src="Images/affiche.jpg" alt="Affiche"/>
+                        </div>                        
                     </div>          
                 </div>
 
@@ -134,7 +163,7 @@
                             <img src="Images/planche2.jpg" alt="Planche en bois claire"/>
                         </div>
                     </div>
-                    <div class="DroiteTroisiemeLigne">
+                    <div class="droite-tl">
                         <div class="big-pic">
                             <img src="Images/chandelier.jpg" alt="Chandelier"> 
                         </div>
@@ -142,6 +171,8 @@
                 </div>
 
             </div>
+
+            <div class="marge-droite"></div>
 
             
 
